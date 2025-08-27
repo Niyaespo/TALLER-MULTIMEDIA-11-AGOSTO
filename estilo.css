@@ -59,11 +59,61 @@ body {
     left: 50%;
 }
 
-.cuadrado2{
-    width: 25%;
-    height: 25%;
-    background-color: aqua;
-    border: 1px solid black;
-    justify-content: space-around;
-    align-content: space-around;
-    
+    /* Estilo dibujo*/
+#tituloDibujo {
+text-align: center;
+}
+
+#lienzo {
+width: 360px;
+height: 554px;
+background-image: url("https://static.wikia.nocookie.net/villano/images/e/e4/BillCipherCropped.png/revision/latest/scale-to-width/360?cb=20240907232928&path-prefix=es");
+background-repeat: no-repeat;
+background-size: cover;
+border: 1px solid black;
+margin: 0 auto;
+position: relative;
+}
+ 
+/* línea hecha con border*/
+.lineaHorizontal {
+    width: 100px;
+    height: 0px;
+    border: 3px solid rgb(255, 110, 110); /* borde de la figura: grosor, estilo, color */
+    position: absolute;
+    top: 50px;
+    left: 250px;
+}
+
+/* línea hecha con border*/
+.lineaVertical1 {
+    width: 5px;
+    height: 80px;
+    background-color: red;
+    border: 3px solid rgb(255, 0, 0); /* borde de la figura: grosor, estilo, color */
+    position: absolute;
+    top: 399px;
+    left: 228px;
+}
+
+.lineaVertical2 {
+    width: 5px;
+    height: 80px;
+    background-color: red;
+    border: 3px solid rgb(255, 0, 0); /* borde de la figura: grosor, estilo, color */
+    position: absolute;
+    top: 399px;
+    left: 116px;
+}
+
+.triangulo {
+   width: 0px;
+   height: 0px;
+   border-style: solid;
+   border-width: 0 154px 248px 154px;
+   border-color: transparent transparent #fff36d transparent;
+   transform: rotate(0deg);
+   position: absolute;
+   top: 150px;
+   left: 30px;
+}
