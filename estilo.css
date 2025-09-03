@@ -2,6 +2,14 @@ body {
     background-color: gainsboro; 
 }
 
+@keyframes animacioooon {
+    0% {
+        border-color: transparent transparent #fff36d transparent;
+    }
+    100% {
+        border-color: transparent transparent red transparent;
+    }
+}
 .parrafo{
     color: purple;
     background-color: greenyellow;
@@ -13,55 +21,12 @@ body {
 
 }
 
-#cosa1 {
-    width: 45vw;
-    height: 88vh;
-    border: 1px solid black;
-    margin: 10px;
-    position: relative;
-}
-
-#cosa2 {
-    width: 45vw;
-    height: 88vh;
-    border: 1px solid black;
-    margin: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-
-.cuadrado{
-    width: 25%;
-    height: 25%;
-    background-color: aqua;
-    border: 1px solid black;
-    position: absolute;
-
-}
-
-#cuadrado1 {
-    top: 0%;
-    left: 0%;
-
-}
-
-#cuadrado2 {
-    top: 25%;
-    left: 25%;
-}
-
-#cuadrado3 {
-    top: 50%;
-    left: 50%;
-}
-
     /* Estilo dibujo*/
 #tituloDibujo {
 text-align: center;
+font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #lienzo {
@@ -116,4 +81,8 @@ position: relative;
    position: absolute;
    top: 150px;
    left: 30px;
+}
+
+.triangulo:hover {
+animation: animacioooon 2s linear infinite alternate;
 }
